@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Maket</title>
+    <style>
+   *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul{
+    display: flex;
+    margin: 0 55px 0 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu ul li a{
+    color: #191919;
+    font-size: 12px;
+}
+.menu ul li.home a{
+    color: #10c9c3;
+}
+.menu ul li{
+    margin: 30px 15px 20px 0;
+}
+.menu ul li a:hover{
+    color: #10c9c3;
+    transition: 0.1s;
+}
+.logo{
+    margin: 30px 0 0 55px;
+}
+.section-1{
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    padding: 100px 0 100px 0;
+}
+.section-1 p{
+    margin: 15px 0 0 0;
+    line-height: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #828282;
+}
+.photos{
+    display: flex;
+    justify-content: center;
+}
+.photo-1{
+    background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-1.png);
+    width: 336.5px;
+    height: 320px;
+    background-repeat: no-repeat;
+}
+.photo-2{
+    background-image: linear-gradient(rgba(209, 209, 209,0.5),rgba(214, 214, 214,0.5)),url(./foto-2.png);
+    width: 336.5px;
+    height: 320px;
+    background-repeat: no-repeat;
+}
+.photo-3{
+    background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-3.png);
+    width: 336.5px;
+    height: 320px;
+    background-repeat: no-repeat;
+}
+.photo-4{
+    background-image: linear-gradient(rgba(209, 209, 209,0.5),rgba(214, 214, 214,0.5)),url(./foto-4.png);
+    width: 336.5px;
+    height: 320px;
+    background-repeat: no-repeat;
+}
+.photo-5{
+    background-image: linear-gradient(rgb(209, 209, 209,0.5),rgb(214, 214, 214,0.5)),url(./foto-5.png);
+    width: 336.5px;
+    height: 320px;
+    background-repeat: no-repeat;
+}
+.photo-6{
+    background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-6.png);
+    width: 336.5px;
+    height: 320px;
+    background-repeat: no-repeat;
+}
+.photo-7{.
+    background-image: linear-gradient(rgb(209, 209, 209,0.5),rgb(214, 214, 214,0.5)),url(/foto-7.png);
+    width: 336.5px;
+    height: 320px;
+    background-repeat: no-repeat;
+}
+.photo-8{
+    background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-8.png);
+    width: 336.5px;
+    height: 320px;
+    background-repeat: no-repeat;
+}
+.photo-9{
+    background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-9.png);
+    width: 336.5px;
+    height: 320px;
+    background-repeat: no-repeat;
+}
+.photo-10{
+    background-image: linear-gradient(rgba(209, 209, 209,0.5),rgba(214, 214, 214,0.5)),url(./foto-10.png);
+    width: 336.5px;
+    height: 320px;
+    background-repeat: no-repeat;
+}
+.photo-11{
+    background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-11.jpg);
+    width: 336.5px;
+    height: 320px;
+    background-repeat: no-repeat;
+}
+.photo-12{
+    background-image: linear-gradient(rgba(209, 209, 209,0.5),rgba(214, 214, 214,0.5)),url(./foto-12.png);
+    width: 336.5px;
+    height: 320px;
+    background-repeat: no-repeat;
+}
+.icon:hover{
+    opacity: 1;
+    transition: 0.5s;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.foto img{
+    margin: 145px 145px 145px 145px;
+}
+.icon{
+    background-color: #21bfb9;
+    opacity: 0;
+    width: 336.5px;
+    height: 320px;   
+}
+footer{
+    background-color: #141414;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-around;
+    padding: 100px 0 0 0;
+}
+.footer-3{
+    display: flex;
+}
+.footer-3 ul{
+    margin: 0 40px 0 0;
+}
+.footer-1 h1{
+    font-size: 24px;
+    margin: 0 0 15px 0;
+}
+.email{
+    cursor: pointer;
+}
+.footer-3 ul li{
+    cursor: pointer;
+}
+
+
+
+
+
+/* media */
+@media (max-width:360px) {
+    header{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu ul{
+        display: flex;
+        margin: 0 55px 0 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .menu ul li a{
+        color: #191919;
+        font-size: 12px;
+    }
+    .menu ul li.home a{
+        color: #10c9c3;
+    }
+    .menu ul li{
+        margin: 30px 15px 20px 0;
+    }
+    .menu ul li a:hover{
+        color: #10c9c3;
+        transition: 0.1s;
+    }
+    .logo{
+        margin: 30px 0 0 55px;
+    }
+    .section-1{
+        background-color: #f6f6f6;
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        padding: 100px 0 100px 0;
+    }
+    .section-1 p{
+        margin: 15px 0 0 0;
+        line-height: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #828282;
+    }
+    .photos{
+        display: flex;
+        justify-content: center;
+    }
+    .photo-1{
+        background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-1.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-2{
+        background-image: linear-gradient(rgba(209, 209, 209,0.5),rgba(214, 214, 214,0.5)),url(./foto-2.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-3{
+        background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-3.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-4{
+        background-image: linear-gradient(rgba(209, 209, 209,0.5),rgba(214, 214, 214,0.5)),url(./foto-4.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-5{
+        background-image: linear-gradient(rgb(209, 209, 209,0.5),rgb(214, 214, 214,0.5)),url(./foto-5.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-6{
+        background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-6.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-7{
+        background-image: linear-gradient(rgb(209, 209, 209,0.5),rgb(214, 214, 214,0.5)),url(./foto-7.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-8{
+        background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-8.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-9{
+        background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-9.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-10{
+        background-image: linear-gradient(rgba(209, 209, 209,0.5),rgba(214, 214, 214,0.5)),url(./foto-10.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-11{
+        background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-11.jpg);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-12{
+        background-image: linear-gradient(rgba(209, 209, 209,0.5),rgba(214, 214, 214,0.5)),url(./foto-12.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .icon:hover{
+        opacity: 1;
+        transition: 0.5s;
+        transform: rotate();
+        cursor: pointer;
+    }
+    .foto img{
+        margin: 145px 145px 145px 145px;
+    }
+    .icon{
+        background-color: #21bfb9;
+        opacity: 0;
+        width: 336.5px;
+        height: 320px;   
+    }
+    footer{
+        background-color: #141414;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        justify-content: space-around;
+        padding: 100px 0 0 0;
+    }
+    .footer-3{
+        display: flex;
+    }
+    .footer-3 ul{
+        margin: 0 40px 0 0;
+    }
+    .footer-1 h1{
+        font-size: 24px;
+        margin: 0 0 15px 0;
+    }
+    .email{
+        cursor: pointer;
+    }
+    .footer-3 ul li{
+        cursor: pointer;
+    }
+}
+
+@media (max-width:360px) and (min-width:768px) {
+    header{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu ul{
+        display: flex;
+        margin: 0 35px 0 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .menu ul li a{
+        color: #191919;
+        font-size: 10px;
+    }
+    .menu ul li.home a{
+        color: #10c9c3;
+    }
+    .menu ul li{
+        margin: 30px 15px 20px 0;
+    }
+    .menu ul li a:hover{
+        color: #10c9c3;
+        transition: 0.1s;
+    }
+    .logo{
+        margin: 20px 0 0 45px;
+    }
+    .section-1{
+        background-color: #f6f6f6;
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        padding: 100px 0 100px 0;
+        flex-wrap: wrap
+    }
+    .section-1 p{
+        margin: 15px 0 0 0;
+        line-height: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #828282;
+    }
+    .photos{
+        display: flex;
+        justify-content: center;
+    }
+    .photo-1{
+        background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-1.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-2{
+        background-image: linear-gradient(rgba(209, 209, 209,0.5),rgba(214, 214, 214,0.5)),url(./foto-2.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-3{
+        background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-3.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-4{
+        background-image: linear-gradient(rgba(209, 209, 209,0.5),rgba(214, 214, 214,0.5)),url(./foto-4.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-5{
+        background-image: linear-gradient(rgb(209, 209, 209,0.5),rgb(214, 214, 214,0.5)),url(./foto-5.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-6{
+        background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-6.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-7{
+        background-image: linear-gradient(rgb(209, 209, 209,0.5),rgb(214, 214, 214,0.5)),url(./foto-7.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-8{
+        background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-8.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-9{
+        background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-9.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-10{
+        background-image: linear-gradient(rgba(209, 209, 209,0.5),rgba(214, 214, 214,0.5)),url(./foto-10.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-11{
+        background-image: linear-gradient(rgba(117, 113, 113,0.5),rgba(100, 100, 100,0.5)),url(./foto-11.jpg);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .photo-12{
+        background-image: linear-gradient(rgba(209, 209, 209,0.5),rgba(214, 214, 214,0.5)),url(./foto-12.png);
+        width: 336.5px;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .icon:hover{
+        opacity: 1;
+        transition: 0.5s;
+        transform: rotate();
+        cursor: pointer;
+    }
+    .foto img{
+        margin: 145px 145px 145px 145px;
+    }
+    .icon{
+        background-color: #21bfb9;
+        opacity: 0;
+        width: 336.5px;
+        height: 320px;   
+    }
+    footer{
+        background-color: #141414;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        justify-content: space-around;
+        padding: 100px 0 0 0;
+    }
+    .footer-3{
+        display: flex;
+    }
+    .footer-3 ul{
+        margin: 0 40px 0 0;
+    }
+    .footer-1 h1{
+        font-size: 24px;
+        margin: 0 0 15px 0;
+    }
+    .email{
+        cursor: pointer;
+    }
+    .footer-3 ul li{
+        cursor: pointer;
+    }
+}
+    </style>
+</head>
+<body>
+    <!--header Start  -->
+    <header>
+        <div class="logo">
+            <img src="./logo.jpg.png" alt="logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="home"><a href="file:///D:/web-odina/maketlar/maket-5/index.html">HOME</a></li>
+                <li><a href="file:///D:/web-odina/maketlar/maket-6/index.html">ABOUT</a></li>
+                <li><a href="file:///D:/web-odina/maketlar/maket-7/index.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header End -->
+    <!-- section-1 Start -->
+    <section>
+        <div class="section-1">
+            <img src="./UI_UX & Graphic Designer.name-header.png" alt="name">
+            <p>I am a Graphic & Web Designer based in New York, specializing <br>
+            in User Interface Design and Development.</p>
+        </div>
+    </section>
+    <!-- section-1 End -->
+    <!-- section-2 Start -->
+    <section>
+        <div class="section-2">
+            <div class="photos">
+                <div class="photo-1">
+                    <div class="icon">
+                       <div class="foto">
+                           <img src="./icon.jpg.png" alt="icon">
+                       </div> 
+                    </div>
+                </div>
+                <div class="photo-2">
+                    <div class="icon">
+                        <div class="foto">
+                            <img src="./icon.jpg.png" alt="icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-3">
+                    <div class="icon">
+                        <div class="foto">
+                            <img src="./icon.jpg.png" alt="icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-4">
+                    <div class="icon">
+                        <div class="foto">
+                            <img src="./icon.jpg.png" alt="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photos">
+                <div class="photo-5">
+                    <div class="icon">
+                        <div class="foto">
+                            <img src="./icon.jpg.png" alt="icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-6">
+                    <div class="icon">
+                        <div class="foto">
+                            <img src="./icon.jpg.png" alt="icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-7">
+                    <div class="icon">
+                        <div class="foto">
+                            <img src="./icon.jpg.png" alt="icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-8">
+                    <div class="icon">
+                        <div class="foto">
+                            <img src="./icon.jpg.png" alt="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photos">
+                <div class="photo-9">
+                    <div class="icon">
+                        <div class="foto">
+                            <img src="./icon.jpg.png" alt="icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-10">
+                    <div class="icon">
+                        <div class="foto">
+                            <img src="./icon.jpg.png" alt="icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-11">
+                    <div class="icon">
+                        <div class="foto">
+                            <img src="./icon.jpg.png" alt="icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-12">
+                    <div class="icon">
+                        <div class="foto">
+                            <img src="./icon.jpg.png" alt="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-2 End -->
+    <!-- footer Star -->
+    <footer>
+        <div class="footer-1">
+            <h1>Piroll Design,Ins.</h1>
+            <p> 2017 Piroll. All rights reserved.</p>
+            <p>Designed by robirurk.</p>
+        </div>
+        <div class="footer-2">
+            <p class="email">hello@pirolltheme.com</p>
+            <p>+44 987 065 908</p> 
+        </div>
+        <div class="footer-3">
+            <ul>
+                <li>Projects</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Carreer</li>
+            </ul>
+            <ul>
+                <li>News</li>
+                <li>Events</li>
+                <li>Contact</li>
+                <li>Legals</li>
+            </ul>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Dribbble</li>
+            </ul>
+        </div>
+    </footer>
+    <!-- footer End -->
+</body>
+</html>

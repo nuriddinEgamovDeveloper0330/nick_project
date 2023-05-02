@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Orange Marketing</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header{
+width: 100%;
+height: 80px;
+background-color: #f8f8f8;
+}
+.wrap{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.active{
+    display: flex;
+    align-items: center;
+    
+}
+.active p{
+    margin-left: 20px; 
+    color:#dd4400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrap ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+ .wrap ul li{
+
+    margin-left: 20px;
+    
+ }
+ul li a{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 75px;
+    transition: 0.2s ease-in-out;
+}
+ul li a.actives {
+    color: #dd4400;
+}
+ul li a:hover{
+    color: #dd4400;
+    width: 50px;
+    height: 20px;
+}
+.main-one{
+    color: #d30b0b;
+    font-size: 30px;
+    background-image:url(https://www.printingforless.com/site/wp-content/uploads/2022/09/Halloween_Marketing.png);
+    height: 365px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.paragraph-one {
+    display: flex;
+    justify-content: center;
+    padding: 185px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+}
+.section-one{
+    margin: 30px 200px 0 200px;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    width: 200px;
+    height: 285px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgb(216,123,100);
+}
+.item{
+   color: #dd4400; 
+   font-weight: bold;
+   margin: 25px auto;
+   width: 100px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 13px;
+   text-align: center;
+   padding: 5px 0 0 0;
+}
+.box img{
+    height: 69px;
+    margin: 30px 65px;
+}
+.small-box{
+    height: 2px;
+    width: 120px;
+    background-color: #dd4400;
+    margin: 0 auto;
+}
+button{
+    padding: 15px 50px;
+    background-color: #dd4400;
+    color: white;
+    font-size: 12px;
+    margin: 0 0 0 13px;
+    border: 1px solid #dd4400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+
+.section-two {
+    margin: 50px 200px 0 200px;
+    display: flex;
+
+}
+.heading-two {
+    color: rgb(53, 53, 53);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+}
+.heading-one {
+    color: rgb(53, 53, 53);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 30px 75px;
+}
+.section-paragraph__one{
+    color: rgb(53, 53, 53);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 0;
+    font-size: 14px;
+
+}
+.section-container__image_p{
+    text-decoration: underline;
+    color: #dd4400;
+    width: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 0 0 0;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+.section-container__image img {
+    height: 50px;
+    margin: 10px 20px 10px 75px;
+}
+.section-container__image{
+    display: flex;
+}
+.button{
+  background: #dd4400;
+  padding: 5px 35px;
+  color: white;
+  font-size: 12px;
+  margin: 0 0 0 0;
+  border: 1px solid #dd4400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  cursor: pointer;
+
+}
+footer {
+    background: #dd4400;
+    height: 180px;
+    width: 100%;
+    margin: 100px 0 0 0;
+}
+.footer-display__flex{
+    display: flex;
+}
+.footer-paragraph__one{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 0 15px 0;
+}
+.footer-paragraph__two {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    font-size: 19px;
+    padding: 0 0 5px 0;
+
+}
+.footer-paragraph__three {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.footer-section {
+    margin: 0 200px 0 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    padding: 50px 0;
+}
+.footer-section-one {
+    padding: 50px 0;
+}
+.footer-paragraph__four {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 0 15px 0;
+}
+.footer-paragraph__five {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 0 5px 0;
+    font-size: 12px;
+}  
+.footer-paragraph__six {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}  
+    </style>
+</head>
+<body>
+<!-- header Start -->
+    <header>
+ <div class="wrap">
+    <a class="active" >
+        <img style="width: 40px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3bRLe94n9JtQtevkRnQEBDdJAZtXeAg_dwz2PQQ8oS8W9w2S4cz7H4F48yfaScHJQkEo&usqp=CAU" alt="png">
+        <p>Orange Marketing</p>
+    </a>
+    <ul>
+        <li>
+            <a class="actives" href="#">Main</a>
+        </li>
+        <li>
+            <a href="#"> Articles </a>
+        </li>
+        <li>
+             <a href="#">Services </a>
+        </li>
+        <li>
+            <a href="#">Support</a>
+        </li>
+        <li>
+            <a href="#">Contacs</a>
+        </li>
+    </ul>
+</div>
+    </header>
+<!-- header End -->
+<!-- main Start  -->
+<main>
+    <div class="main-one">
+        <p class="paragraph-one">Orange Marketing</p>
+    </div>
+</main>
+<!-- main End -->
+<!-- section Start -->
+<section class="section-one">
+    <div class="section">
+        <div class="box">
+            <p class="item">Powerful <br> analytics</p>
+            <div class="small-box"></div>
+            <img src="data:image/png;base64,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" alt="icon">
+            <button>More details</button>
+        </div>
+        <div class="box">
+           <p class="item">Management <br> of documents</p>
+        <div class="small-box"></div>
+         <img src="data:image/jpeg;base64,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" alt="icon">
+            <button>More details</button> 
+        </div> 
+        <div class="box">
+            <p class="item">International <br> solutions </p>
+         <div class="small-box"></div>
+         <img src="https://thumbs.dreamstime.com/z/business-keywords-research-analysis-orange-icon-keyword-vector-search-web-marketing-optimization-flat-design-illustration-internet-140430920.jpg" alt="icon">
+             <button>More details</button>
+        </div>
+        <div class="box">
+            <p class="item">Business <br> strategies</p>
+         <div class="small-box"></div>
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGtWAmaLUEetrbV4_zmvclTlXu1tsKIK0DPg&usqp=CAU" alt="icon">
+            <button>More details</button>
+        </div>
+    </div>
+</section>
+<!-- section End -->
+
+<!-- section Start -->
+<section class="section-two">
+    <div class="section-container__one">
+        <div class="heading-two">
+            How to create strategy of business rise?
+        </div>
+        <div class="section-paragraph__one">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis possimus, obcaecati corporis iure minus animi explicabo reprehenderit totam, inventore facilis sapiente accusamus expedita rem non sed cumque excepturi voluptates omnis?
+        </div>
+        <div class="section-paragraph__one">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis possimus, obcaecati corporis iure minus animi explicabo reprehenderit totam, inventore facilis sapiente accusamus expedita rem non sed cumque excepturi voluptates omnis?
+        </div>
+        <div class="section-paragraph__one">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis possimus, obcaecati corporis iure minus animi explicabo reprehenderit totam, inventore facilis sapiente accusamus expedita rem non sed cumque excepturi voluptates omnis?
+        </div>
+      <button type="button" class="button">
+          More details
+      </button>
+    </div>
+    <div class="section-container__two">
+        <div class="heading-one">
+            Interesting
+        </div>
+        <div class="section-container__image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2FlzPKMTHs5Xu5tPv85IoOd6rbzW2tdTpaIBqEkFNCDiGc-tfFByn95iLALkTf_bj80&usqp=CAU" alt="Person">
+            <p class="section-container__image_p">
+                    How to pay with a Payme card?
+            </p>
+        </div>
+        <div class="section-container__image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUtWwANEU3-DUgjEOs_LUZA8G5HRxkClmBaQ&usqp=CAU" alt="Person">
+                <p class="section-container__image_p">
+                         Molestiae tempora deleniti ipsam aliquid deserunt iusto.
+                </p>
+        </div>
+            <div class="section-container__image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBN8CEZ2gLQF0YaoheuN2JYvL3H5rXR98TzQ&usqp=CAU" alt="Person">
+                    <p class="section-container__image_p">
+                            Ad exercitationem blanditiis excepturi minima et.
+                    </p>
+        </div>
+                <div class="section-container__image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxzbXGv9a_A1zoAgy3fyIqDWTeFWuVt1cHS4aPZJdxTNABXwPWo2cI8H9Z5FxRvtMueI0&usqp=CAU" alt="Person">
+                    <p class="section-container__image_p">
+                            Saepe ratione ab architecto ut quas, molestiae.
+                    </p>
+        </div>
+    </div>
+</section>
+<!-- section End -->
+
+
+<!-- Footer section Start -->
+<footer>
+  <div class="footer-display__flex">
+        <div class="footer-section">
+                <p class="footer-paragraph__one">
+                    Consultation is free
+                </p>
+                <p class="footer-paragraph__two">
+                    +998 90 000 00 00
+                </p>
+                <p class="footer-paragraph__three">
+                    Every day from 09:00 to 18:00, except Sunday
+                </p>
+            </div>
+            <div class="footer-section-one">
+                <p class="footer-paragraph__four">
+                    Orange Marketing
+                </p>
+                <p class="footer-paragraph__five">
+                    The best marketing solutions
+                </p>
+                <p class="footer-paragraph__six">
+                        info@orange-marketing.uz
+                </p>
+            </div>
+  </div>
+</footer>
+<!-- Footer section End -->
+
+
+
+</body>
+</html>
